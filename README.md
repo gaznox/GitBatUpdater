@@ -1,14 +1,14 @@
-# GitBatUpdater
-This is a bat script that clones a repo and provides another bat file to keep the repo up-to-date.
+# GitShellUpdater
+These are shell scripts that clones a repo and provides another updater shell script file to keep the newly downloaded repo up-to-date.
 
 
 USAGE
 
-run DownloadNewGitRepo.bat
+run DownloadNewGitRepo.bat if on windows or DownloadNewGitRepo.sh if on MacOS/Linux
 
 enter the url for the git repo you want to download ending in .git
 
 
-After the new repo is cloned, a new bat called updater.bat will be created.
+After the new repo is cloned, a new shell script called updater.bat or updater.sh will be created depending on your OS.
 
-updater.bat when run will pull any new changes and install any new requirements
+The updater script will pull any new changes and install any new requirements for the repo.
