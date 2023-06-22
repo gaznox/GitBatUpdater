@@ -68,7 +68,11 @@ IF %ERRORLEVEL% NEQ 0 (
         echo ::python -m pip install --upgrade pip
         echo ::git update-git-for-windows
         echo git pull !url!
-        echo pip install -r requirements.txt
+        echo IF EXIST requirements.txt ^(
+        echo     pip install -r requirements.txt
+        echo ^) ELSE ^(
+        echo     echo no requirements.txt for this repo
+        echo ^)
 
         echo endlocal
         echo pause
