@@ -47,6 +47,8 @@ then
     (
         echo "#!/bin/bash"
         echo "git pull $url"
+        echo "#python -m pip install --upgrade pip"
+        echo "#git update"
         echo "if [ -f requirements.txt ]; then"
         echo "    pip install -r requirements.txt"
         echo "else"

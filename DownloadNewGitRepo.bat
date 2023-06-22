@@ -64,7 +64,7 @@ IF %ERRORLEVEL% NEQ 0 (
         echo @echo off
         echo setlocal enabledelayedexpansion
 
-        echo ::Uncomment if you would like to update pip and git before updating gpt-engineer
+        echo ::Uncomment if you would like to update pip and git before updating
         echo ::python -m pip install --upgrade pip
         echo ::git update-git-for-windows
         echo git pull !url!
